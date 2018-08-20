@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+button.export {
+    margin-right: 50px;
+}
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: lightgray;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.stats-container {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.w3-text-white, .w3-hover-text-white:hover {
+    color: #fff!important;
+    }
+.w3-row-padding, .w3-row-padding>.w3-half, .w3-row-padding>.w3-third, .w3-row-padding>.w3-twothird, .w3-row-padding>.w3-threequarter, .w3-row-padding>.w3-quarter, .w3-row-padding>.w3-col {
+    padding: 0 8px;}
+    
+    .w3-left {
+    float: left!important;
+}
+.w3-right {
+    float: right!important;
+}
+.w3-orange, .w3-hover-orange:hover {
+    color: #000!important;
+    background-color: #ff9800!important;
+}
+.w3-container, .w3-panel {
+    padding: 0.01em 16px;
+}
+.w3-margin-bottom {
+    margin-bottom: 16px!important;
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+<img src ="img/ewueagle.png" height=200px; width = 200px;>
+<br>
+
+
+  <a href="Admin.html">Home</a>
+  <br>
+  <a href="edit.html">Edit</a>
+  <br>
+  <a href ="results.html">Results</a>
+  <br>
+  <a href="prior.html">Prior Awards</a>
+  <br>
+  <a href="search.html">Search</a>
+  <br>
+  <a href="new.html">New</a>
+</div>
+
+<div class="main">
+   <div class="w3-container">
+   <br>
+    <h4>Evaluators</h4>
+    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+    <tr>
+    <th>Name</th>
+    <th>Major</th>
+    <th>Project Title </th>
+    <th>Score </th>
+    <th>Budget </th>
+    <th>Awarded</th>
+    <th>Amount Awarded</th>
+    <th>Award</th>
+      <tr>
+        <td>Student 1</td>
+        <td>Computer Science</td>
+        <td>Cloud Computing</td>
+        <td>5</td>
+        <td>$1000</td>
+        <td>Yes</td>
+        <td>$1000</td>
+        <td><a href=edit.html><button>Select</button></a>
+      </tr>
+      <tr>
+        <td>Student 2</td>
+        <td>Geology</td>
+        <td>Rocks</td>
+        <td>4.95</td>
+        <td>$1100</td>
+        <td>Yes</td>
+        <td>$500</td>
+        <td><a href=edit.html><button>Select</button></a>
+      </tr>
+      <tr>
+        <td>Student 3</td>
+        <td>Chemistry</td>
+        <td>Organic Chemistry</td>
+        <td>4.95</td>
+        <td>$780</td>
+        <td>No</td>
+        <td>$0 </td>
+        <td><a href=edit.html><button>Select</button></a>
+      </tr>
+      <tr>
+        <td>Student 4</td>
+        <td>Biology</td>
+        <td>Earth Worms</td>
+        <td>3</td>
+        <td>$1000</td>
+        <td>Yes</td>
+        <td>$1000</td>
+        <td><a href=edit.html><button>Select</button></a>
+      </tr>
+      <tr>
+        <td>Student 5</td>
+        <td>Computer Science</td>
+        <td>Cloud Computing</td>
+        <td>2.5</td>
+        <td>$1000</td>
+        <td>No</td>
+        <td>$0</td>
+        <td><a href=edit.html><button>Select</button></a>
+      </tr>
+      <tr>
+        <td>Student 6</td>
+        <td>Math</td>
+        <td>The Golden Spiral</td>
+        <td>2.333</td>
+        <td>$1000</td>
+        <td>No</td>
+        <td>$0</td>
+        <td><a href=edit.html><button>Select</button></a>
+      </tr>
+          
+      <tr>
+        <td>Student 1</td>
+        <td>Computer Science</td>
+        <td>Cloud Computing</td>
+        <td>5</td>
+        <td>$1000</td>
+        <td>Yes</td>
+        <td>$1000</td>
+        <td><a href=edit.html><button>Select</button></a>
+      </tr>
+      <tr>
+        <td>Student 2</td>
+        <td>Geology</td>
+        <td>Rocks</td>
+        <td>4.95</td>
+        <td>$1100</td>
+        <td>Yes</td>
+        <td>$1100</td>
+        <td><a href=edit.html><button>Select</button></a>
+      </tr>
+      <tr>
+        <td>Student 3</td>
+        <td>Chemistry</td>
+        <td>Organic Chemistry</td>
+        <td>4.95</td>
+        <td>$780</td>
+        <td>No</td>
+        <td>$0</td>
+        <td><a href=edit.html><button>Select</button></a>
+      </tr>
+      <tr>
+        <td>Student 4</td>
+        <td>Biology</td>
+        <td>Earth Worms</td>
+        <td>3</td>
+        <td>$1000</td>
+        <td>Yes</td>
+        <td>$1000</td>
+        <td><a href=edit.html><button>Select</button></a>
+      </tr>
+      <tr>
+        <td>Student 5</td>
+        <td>Computer Science</td>
+        <td>Cloud Computing</td>
+        <td>2.5</td>
+        <td>$1000</td>
+        <td>No</td>
+        <td>$0</td>
+        <td><a href=edit.html><button>Select</button></a>
+      </tr>
+      <tr>
+        <td>Student 6</td>
+        <td>Math</td>
+        <td>The Golden Spiral</td>
+        <td>2.333</td>
+        <td>$1000</td>
+        <td>No</td>
+        <td>$0</td>
+        <td><a href=edit.html><button>Select</button></a>
+      </tr>
+    </table><br>
+    <button class = "export">Export</button>
+    <select>
+    <option selected disabled>Sort by</option>
+    <option value="Score">Score</option>
+    <option value="Major">Major</option>
+    <option value="Budget">Budget</option>
+    <option value="Awarded">Awarded</option>
+</select>
+<button>Apply</button>
+    <br>
+    </div>
+    </div>
+     <br>
+    <br>
+    </body>
+    </html>
