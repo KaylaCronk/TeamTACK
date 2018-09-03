@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Feedback</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="form.css" >
+        <script src="form.js"></script>
+    </head>
+    <body >
+        <div class="container">
+            <div class="imagebg"></div>
+            <div class="row " style="margin-top: 50px">
+                <div class="col-md-6 col-md-offset-3 form-container">
+                    <h2>Feedback</h2>
+                    <p> Is the student... </p>
+                    <form role="form" method="post" id="reused_form">
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label>Enrolled at EWU at least half time?</label>
+                                <p>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="enroll" value="Yes" >
+                                        Yes
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="enroll" value="No" >
+                                        No
+                                    </label>
+                                </p>
+                                <label>In good academic standing?</label>
+                                <p>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="academic" value="Yes" >
+                                        Yes
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="academic" value="No" >
+                                        No
+                                    </label>
+                                </p>
+                                <label>Engaged in a CSTEM research or creative works project?</label>
+                                <p>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="research" value="Yes" >
+                                        Yes
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="research" value="No" >
+                                        No
+                                    </label>
+                                </p>
+                                <label>Within two years of degree completion?</label>
+                                <p>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="degree" value="Yes" >
+                                        Yes
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio"  name="degree" value="No" >
+                                        No
+                                    </label>
+                                </p>
+                                <label>Designated faculty mentor?</label>
+                                <p>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="mentor" value="Yes" >
+                                        Yes
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="mentor" value="No" >
+                                        No
+                                    </label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="comments"> Eligibility Comments:</label>
+                                <textarea class="form-control" type="textarea" name="comments" id="comments" placeholder="Your Comments" maxlength="6000" rows="7"></textarea>
+                            </div>
+                        </div>
+                        <label>Does the project demonstrate experiential learning in a CSTEM discipline?</label>
+                        <p>
+                          <label class="radio-inline">
+                              <input type="radio" name="learn" value="0" >
+                              0
+                          </label>
+                          <label class="radio-inline">
+                              <input type="radio" name="learn" value="1" >
+                              1
+                          </label>
+                          <label class="radio-inline">
+                              <input type="radio" name="learn" value="2" >
+                              2
+                          </label>
+                          <label class="radio-inline">
+                              <input type="radio" name="learn" value="3" >
+                              3
+                          </label>
+                        </p>
+                        <label>Is the budget justified in the project description, including realistic?</label>
+                        <p>
+                          <label class="radio-inline">
+                              <input type="radio" name="justified" value="0" >
+                              0
+                          </label>
+                          <label class="radio-inline">
+                              <input type="radio" name="justified" value="1" >
+                              1
+                          </label>
+                          <label class="radio-inline">
+                              <input type="radio" name="justified" value="2" >
+                              2
+                          </label>
+                          <label class="radio-inline">
+                              <input type="radio" name="justified" value="3" >
+                              3
+                          </label>
+                        </p>
+                        <label>Are the proposed methods appropriate to achieve the goals?</label>
+                        <p>
+                          <label class="radio-inline">
+                              <input type="radio" name="method" value="0" >
+                              0
+                          </label>
+                          <label class="radio-inline">
+                              <input type="radio" name="method" value="1" >
+                              1
+                          </label>
+                          <label class="radio-inline">
+                              <input type="radio" name="method" value="2" >
+                              2
+                          </label>
+                          <label class="radio-inline">
+                              <input type="radio" name="method" value="3" >
+                              3
+                          </label>
+                        </p>
+                        <label>Is the timeline proposed reasonable?(Too little? Too much?)</label>
+                        <p>
+                          <label class="radio-inline">
+                              <input type="radio" name="time" value="0" >
+                              0
+                          </label>
+                          <label class="radio-inline">
+                              <input type="radio" name="time" value="1" >
+                              1
+                          </label>
+                          <label class="radio-inline">
+                              <input type="radio" name="time" value="2" >
+                              2
+                          </label>
+                          <label class="radio-inline">
+                              <input type="radio" name="time" value="3" >
+                              3
+                          </label>
+                            <label>Is the project well explained (including rationale) and justified?</label>
+                            <p>
+                              <label class="radio-inline">
+                                  <input type="radio" name="project" value="0" >
+                                  0
+                              </label>
+                              <label class="radio-inline">
+                                  <input type="radio" name="project" value="1" >
+                                  1
+                              </label>
+                              <label class="radio-inline">
+                                  <input type="radio" name="project" value="2" >
+                                  2
+                              </label>
+                              <label class="radio-inline">
+                                  <input type="radio" name="project" value="3" >
+                                  3
+                              </label>
+                            </p>
+                            <label>Does the budget only include eligible activities (supplies, equipment, field travel, conference travel)?</label>
+                            <p>
+                                <label class="radio-inline">
+                                    <input type="radio" name="budget" value="0" >
+                                    0
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="budget" value="1" >
+                                    1
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="budget" value="2" >
+                                    2
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="budget" value="3" >
+                                    3
+                                </label>
+                            </p>
+                            <label>Based on eligibility and quality scores, RECOMMEND one of the following categories</label>
+                            <p>
+                                <label class="radio-inline">
+                                    <input type="radio" name="fund" value="no" >
+                                    Do Not Fund
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="fund" value="some" >
+                                    Fund if Possible
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="fund" value="yes" >
+                                    Fund
+                            </p>
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <label for="comments"> Quality Assessment Comments:</label>
+                                    <textarea class="form-control" type="textarea" name="qual_comments" placeholder="Your Comments" maxlength="6000" rows="7"></textarea>
+                                </div>
+                            </div>
+                        </p>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button type="submit" class="button" name="submit" >Submit </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Posted your feedback successfully!</h3> </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
